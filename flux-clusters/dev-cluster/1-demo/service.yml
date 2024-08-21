@@ -11,11 +11,8 @@ spec:
     protocol: TCP
     targetPort: 80
     nodePort: 30001
-  - port: 8080
-    protocol: TCP
-    targetPort: 8080
   selector:
     app: block-buster
     version: 7.1.0
     env: dev
-  type: LoadBalancer
+  type: NodePort
